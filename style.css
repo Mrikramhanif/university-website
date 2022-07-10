@@ -54,3 +54,12 @@ transition: 0.5s;
 .nav-links ul li:hover::after{
 width: 100%;
 }
+.text-box{
+    top: 50%;
+    left: 50%;
+    color: white;
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
