@@ -12,7 +12,7 @@
     position: relative;
 }
 nav a{
-    display: flex;
+   
     color: aliceblue;
     text-decoration: none;
     text-transform: capitalize;
@@ -22,6 +22,7 @@ nav a{
 }
 nav{
  padding-top: 35px;
+ justify-content: space-between;
  
 }
 .nav-links{
@@ -31,7 +32,7 @@ nav{
 }
 .nav-links ul li{
     list-style: none;
-    display: inline;
+    display: inline-block;
     padding: 8px 12px;
     position: relative;
     flex: right;
@@ -39,4 +40,17 @@ nav{
 .nav-links ul li a{
     color: aliceblue;
     text-decoration: none;
+}
+.nav-links ul li::after{
+content: '';
+width: 0%;
+height: 2px;
+background: orangered;
+display: block;
+margin: auto;
+transition: 0.5s;
+
+}
+.nav-links ul li:hover::after{
+width: 100%;
 }
